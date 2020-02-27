@@ -11,4 +11,8 @@ package javatutorial;
  */
 public class IimsStudent extends Student {
     
+    public IimsStudent(String fullName, String address, String contactNumber) {
+        super(fullName, address, contactNumber);
+    }
+    
 }

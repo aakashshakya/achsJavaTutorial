@@ -5,6 +5,10 @@
  */
 package javatutorial;
 
+import javatutorial.abstractdemo.AbstractAnimal;
+import javatutorial.abstractdemo.Dog;
+import javatutorial.abstractdemo.Lion;
+
 /**
  *
  * @author aakash
@@ -51,6 +55,28 @@ public class JavaTutorial {
         
         achsStudent.getInformation();
         achsStudent.getFacultyInformation();
+        
+        
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        
+        
+       //Abstract example
+        System.out.println("============Abstract example starts from here=============");
+        Lion lion = new Lion();
+        lion.eats();
+        lion.sound();
+        
+        Dog dog = new Dog();
+        dog.eats();
+        dog.sound();
+        
+        AbstractAnimal dogAbstractAnimal = new Dog();
+        dogAbstractAnimal.eats();
+        dogAbstractAnimal.sound();
+        
         
     }
     
