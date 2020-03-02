@@ -8,6 +8,9 @@ package javatutorial;
 import javatutorial.abstractdemo.AbstractAnimal;
 import javatutorial.abstractdemo.Dog;
 import javatutorial.abstractdemo.Lion;
+import javatutorial.javainterface.EmployeeImplementor;
+import javatutorial.javainterface.PersonImplementor;
+import javatutorial.javainterface.PersonInterface;
 
 /**
  *
@@ -19,17 +22,18 @@ public class JavaTutorial {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello world.");
-        
-        Person person = new Person("Aakash Raj Shakya", 
-                "Lagan Tole",
-                "9860706065");
+//        System.out.println("Hello world.");
+//        
+//        Person person = new Person("Aakash Raj Shakya", 
+//                "Lagan Tole",
+//                "9860706065");
 //        person.fullName = "Aakash Raj Shakya";
 //        person.address = "Lagan Tole";
 //        person.contactNumber = "9860706065";
         
 //        System.out.println(person.fullName);
-        person.getInformation(); 
+        
+/*person.getInformation(); 
         
         Student student = new Student("Akash Rana",
         "Kapoor Dhara", "9843552211");
@@ -44,7 +48,7 @@ public class JavaTutorial {
         /*Person secondPerson = new Student();
         secondPerson.faculty = "";*/
         
-        AchsStudent achsStudent = 
+        /*AchsStudent achsStudent = 
                 new AchsStudent("Surakhsya Banjade",
         "Kamal Pokhari", "9847552232", 41);
 //        achsStudent.fullName = "Surakhsya Banjade";
@@ -54,7 +58,7 @@ public class JavaTutorial {
 //        achsStudent.numberOfStudents = 41;
         
         achsStudent.getInformation();
-        achsStudent.getFacultyInformation();
+        achsStudent.getFacultyInformation();*/
         
         
         System.out.println("");
@@ -64,7 +68,7 @@ public class JavaTutorial {
         
         
        //Abstract example
-        System.out.println("============Abstract example starts from here=============");
+        /*System.out.println("============Abstract example starts from here=============");
         Lion lion = new Lion();
         lion.eats();
         lion.sound();
@@ -75,9 +79,24 @@ public class JavaTutorial {
         
         AbstractAnimal dogAbstractAnimal = new Dog();
         dogAbstractAnimal.eats();
-        dogAbstractAnimal.sound();
-        
-        
+        dogAbstractAnimal.sound();*/
+
+        PersonImplementor person = new PersonImplementor();
+        person.fullName = "Aakash Raj Shakya";
+        person.address = "Lagan Tole, Kathmandu";
+        System.out.println(person.getPersonalInfo());
+
+        EmployeeImplementor employee = new EmployeeImplementor();
+        employee.fullName = "Prarup Gurung";
+        employee.address = "Jomsom, Mustang";
+        employee.salary = 100000.0;
+        System.out.println(employee.getPersonalInfo());
+        System.out.println(employee.getSalary());
+
+
+//        secondEmployee.get    }
+
+
     }
     
 }
