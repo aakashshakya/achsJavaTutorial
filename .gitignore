@@ -1,2 +1,5 @@
 build.xml
 build/
+.idea
+javaTutorial.iml
+out/
