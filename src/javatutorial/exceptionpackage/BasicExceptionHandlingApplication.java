@@ -5,6 +5,7 @@
  */
 package javatutorial.exceptionpackage;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -17,12 +18,12 @@ public class BasicExceptionHandlingApplication {
     
     public static void main(String[] args) {
         try{
-            FileReader fileReader = new FileReader("some.txt");
+            FileInputStream fileReader = new FileInputStream("some.txt");
             fileReader.read();
-        } catch(FileNotFoundException fe){
-            System.out.println("Sorry we were not able to find the file.");
-        } catch(IOException ie){
-            System.out.println("Some IO exception occurred. Please try again later");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally{
             System.out.println("What ever happened happened.");
         }

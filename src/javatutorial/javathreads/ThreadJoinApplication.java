@@ -35,7 +35,6 @@ public class ThreadJoinApplication {
             System.out.println("Exception has been" +
                     " caught" + ex);
         }
-
         t3.start();
     }
 }
