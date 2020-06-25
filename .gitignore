@@ -4,3 +4,4 @@ build/
 javaTutorial.iml
 out/
 nbproject/
+/dist/
