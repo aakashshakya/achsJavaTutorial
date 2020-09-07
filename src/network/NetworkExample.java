@@ -8,8 +8,8 @@ public class NetworkExample {
             //Setting a URL
             URL url = new URL("https://www.example.com:8080/");
             URL firstPageURL = new URL(url, "first-page");
-            URL secondPageURL = new URL(url, "second-page");
-            URL queryComponentURL = new URL(url, "?username=aakash&password=test");
+            URL secondPageURL = new URL(url, "second-page/");
+            URL queryComponentURL = new URL(secondPageURL, "?username=aakash&password=test");
             URL urlWithReference = new URL(url, "#contact-us");
 
             //Parsing a URL
@@ -26,7 +26,7 @@ public class NetworkExample {
             //Returns the query component of this URL.
             System.out.println("Query component: " + queryComponentURL.getQuery());
             //Returns the filename component of the URL. The getFile method returns the same as getPath, plus the concatenation of the value of getQuery, if any.
-            System.out.println("File name component: " + secondPageURL.getFile());
+            System.out.println("File name component: " + queryComponentURL.getFile());
             //Returns the reference component of the URL.
             System.out.println("Reference Component: " + urlWithReference.getRef());
 
