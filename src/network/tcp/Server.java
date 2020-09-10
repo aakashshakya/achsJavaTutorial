@@ -18,7 +18,6 @@ public class Server {
         try {
             ServerSocket serverSocket = new ServerSocket(4000);
             Socket socket = serverSocket.accept(); //establishes connection
-            socket.shutdownInput();
 
             DataInputStream inputStream = new DataInputStream(socket.getInputStream());
             String str = inputStream.readUTF();
