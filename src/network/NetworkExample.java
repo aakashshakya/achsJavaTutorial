@@ -22,7 +22,7 @@ public class NetworkExample {
             //Returns the port number component of the URL. The getPort method returns an integer that is the port number. If the port is not set, getPort returns -1.
             System.out.println("Port: " + url.getPort());
             //Returns the path component of this URL.
-            System.out.println("Path component: " + firstPageURL.getPath());
+            System.out.println("Path component: " + secondPageURL.getPath());
             //Returns the query component of this URL.
             System.out.println("Query component: " + queryComponentURL.getQuery());
             //Returns the filename component of the URL. The getFile method returns the same as getPath, plus the concatenation of the value of getQuery, if any.
