@@ -16,4 +16,6 @@ public interface Adder extends Remote {
 
     // Declaring the method prototype 
     public int add(int firstNumber, int secondNumber) throws RemoteException;
+    
+    int multiply(int firstNumber, int secondNumber) throws RemoteException;
 }
