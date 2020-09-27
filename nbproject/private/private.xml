@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/aakash/NetBeansProjects/achsJavaTutorial/src/rmi/Adder.java</file>
+            <file>file:/home/aakash/NetBeansProjects/achsJavaTutorial/src/rmi/Server.java</file>
+            <file>file:/home/aakash/NetBeansProjects/achsJavaTutorial/src/rmi/AdderImplements.java</file>
+            <file>file:/home/aakash/NetBeansProjects/achsJavaTutorial/src/rmi/Client.java</file>
+        </group>
     </open-files>
 </project-private>
